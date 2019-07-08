@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<TITLE> Bootstrap Container </TITLE>
+	<meta charset="utf-8">
+	<meta name="viewport" container="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" >	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+	<script>
+	$(document).ready(function ()
+				{
+				$('#btnSubmit').click(function ()
+					{
+					$('#myAlert').show('fade');
+					});
+				$('#linkClose').click(function ()
+					{
+					$('#myAlert').hide('fade');
+					});
+				});
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<button id="btnSubmit" class="btn btn-primary">
+			subimt
+		</button>
+		
+	<br><br>
+	<div id="myAlert" class="alert alert-danger collapse">
+	<a id="linkClose" href="#" class="close">&times;</a>
+	<strong>Error!</strong> There is a problem submitting your Form
+	</div>
+	</body>
+	</html>
